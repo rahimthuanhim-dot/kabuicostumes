@@ -119,6 +119,8 @@
 
       #booking-form input,
       #booking-form select {
+        width: 100%;
+        min-width: 0;
         background-color: rgba(255, 250, 248, 0.82);
       }
 
@@ -259,13 +261,13 @@
       </section>
 
       <section id="booking" class="border-t border-copper/50 bg-blush px-5 py-16 sm:px-8 sm:py-20">
-        <div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-2 lg:gap-16">
-          <div>
+        <div class="mx-auto grid min-w-0 max-w-7xl grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+          <div class="min-w-0">
             <p class="text-xs font-bold uppercase tracking-[0.18em] text-rose-dark">Booking request</p>
             <h2 class="mt-2 font-heading text-4xl font-semibold sm:text-5xl">Tell us what you need</h2>
             <p class="mt-4 max-w-lg text-sm leading-6 text-ink">Fill in your details, then tap the button below to open a WhatsApp message to +91 82590 90135 with your request already filled in. Tap Send in WhatsApp to deliver it.</p>
           </div>
-          <form id="booking-form" class="grid gap-5" novalidate>
+          <form id="booking-form" class="grid min-w-0 grid-cols-1 gap-5" novalidate>
             <div class="grid gap-2">
               <label for="booking-name" class="text-sm font-semibold">Name</label>
               <input id="booking-name" name="name" type="text" autocomplete="name" maxlength="100" required class="min-h-12 rounded-lg border border-copper bg-paper px-4 py-3 text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-dark">
