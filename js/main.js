@@ -53,7 +53,7 @@
 
     const image = document.createElement("img");
     image.src = product.image;
-    image.alt = `${product.name} traditional Rongmei attire`;
+    image.alt = product.name;
     image.width = 720;
     image.height = 900;
     image.loading = "lazy";
@@ -93,7 +93,7 @@
     card.append(imageFrame, name, rentalType, action);
     productGrid.append(card);
   });
-  catalogStatus.textContent = `${products.length} costume sets available to browse.`;
+  catalogStatus.textContent = `${products.length} collection items available to browse.`;
 
   const today = new Date();
   dateInput.min = [
